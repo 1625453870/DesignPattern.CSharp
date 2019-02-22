@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF5B3B7A-4197-4A14-9FB5-B7EFCCD0101A}</ProjectGuid>
+    <ProjectGuid>{880D9F99-A18E-4218-96C2-9250E0460479}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DesignPatterm.Singleton</RootNamespace>
-    <AssemblyName>DesignPatterm.Singleton</AssemblyName>
+    <RootNamespace>DesignPattern.FactoryMethod</RootNamespace>
+    <AssemblyName>DesignPattern.FactoryMethod</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,13 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomServer.cs" />
-    <Compile Include="LoadBalancer.cs" />
+    <Compile Include="AppConfigHelper.cs" />
+    <Compile Include="BLL\DatabaseLoggerFactory.cs" />
+    <Compile Include="BLL\FileLoggerFactory.cs" />
+    <Compile Include="BLL\LoggerFactory.cs" />
+    <Compile Include="DAL\DatabaseLogger.cs" />
+    <Compile Include="DAL\DatabaseLoggerFactory.cs" />
+    <Compile Include="DAL\FileLogger.cs" />
+    <Compile Include="DAL\FileLoggerFactory.cs" />
+    <Compile Include="IDAL\ILogger.cs" />
+    <Compile Include="IDAL\ILoggerFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="逻辑图.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

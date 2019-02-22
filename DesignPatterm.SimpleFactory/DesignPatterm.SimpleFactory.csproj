@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF5B3B7A-4197-4A14-9FB5-B7EFCCD0101A}</ProjectGuid>
+    <ProjectGuid>{B0F0BD1A-A34B-45F2-BA90-11C08F654013}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DesignPatterm.Singleton</RootNamespace>
-    <AssemblyName>DesignPatterm.Singleton</AssemblyName>
+    <RootNamespace>DesignPatterm.SimpleFactory</RootNamespace>
+    <AssemblyName>DesignPatterm.SimpleFactory</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,13 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomServer.cs" />
-    <Compile Include="LoadBalancer.cs" />
+    <Compile Include="AppConfigHelper.cs" />
+    <Compile Include="BLL\ChartFactory.cs" />
+    <Compile Include="DAL\HistogramChart.cs" />
+    <Compile Include="IDAL\IChartable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="逻辑图.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

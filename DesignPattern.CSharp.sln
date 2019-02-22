@@ -3,9 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "单例Singleton", "单例Singleton", "{A83433A3-095F-4499-B3D7-11C540DBBE86}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01、单例Singleton", "01、单例Singleton", "{A83433A3-095F-4499-B3D7-11C540DBBE86}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterm.Singleton", "DesignPatterm.Singleton\DesignPatterm.Singleton.csproj", "{FF5B3B7A-4197-4A14-9FB5-B7EFCCD0101A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02、简单工厂SimpleFactory", "02、简单工厂SimpleFactory", "{73E7288B-CA47-44AA-8659-442ACC5625D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterm.SimpleFactory", "DesignPatterm.SimpleFactory\DesignPatterm.SimpleFactory.csproj", "{B0F0BD1A-A34B-45F2-BA90-11C08F654013}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03、工厂方法FactoryMethod", "03、工厂方法FactoryMethod", "{D7929B9F-32D7-4198-BE92-3AF634106A5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.FactoryMethod", "DesignPattern.FactoryMethod\DesignPattern.FactoryMethod.csproj", "{880D9F99-A18E-4218-96C2-9250E0460479}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04、抽象工厂AbstractFactory", "04、抽象工厂AbstractFactory", "{4F681B38-6F8B-495E-8A6E-4684703CDC69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.AbstractFactory", "DesignPattern.AbstractFactory\DesignPattern.AbstractFactory.csproj", "{589A7CB2-039A-40F5-A2C1-8C5088C6A577}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +29,27 @@ Global
 		{FF5B3B7A-4197-4A14-9FB5-B7EFCCD0101A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF5B3B7A-4197-4A14-9FB5-B7EFCCD0101A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF5B3B7A-4197-4A14-9FB5-B7EFCCD0101A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F0BD1A-A34B-45F2-BA90-11C08F654013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F0BD1A-A34B-45F2-BA90-11C08F654013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F0BD1A-A34B-45F2-BA90-11C08F654013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F0BD1A-A34B-45F2-BA90-11C08F654013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{880D9F99-A18E-4218-96C2-9250E0460479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{880D9F99-A18E-4218-96C2-9250E0460479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{880D9F99-A18E-4218-96C2-9250E0460479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{880D9F99-A18E-4218-96C2-9250E0460479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{589A7CB2-039A-40F5-A2C1-8C5088C6A577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{589A7CB2-039A-40F5-A2C1-8C5088C6A577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{589A7CB2-039A-40F5-A2C1-8C5088C6A577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{589A7CB2-039A-40F5-A2C1-8C5088C6A577}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FF5B3B7A-4197-4A14-9FB5-B7EFCCD0101A} = {A83433A3-095F-4499-B3D7-11C540DBBE86}
+		{B0F0BD1A-A34B-45F2-BA90-11C08F654013} = {73E7288B-CA47-44AA-8659-442ACC5625D8}
+		{880D9F99-A18E-4218-96C2-9250E0460479} = {D7929B9F-32D7-4198-BE92-3AF634106A5B}
+		{589A7CB2-039A-40F5-A2C1-8C5088C6A577} = {4F681B38-6F8B-495E-8A6E-4684703CDC69}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D34DBA72-DCC2-469D-970C-A493B669B87A}

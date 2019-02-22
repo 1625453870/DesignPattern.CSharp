@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterm.Singleton
+namespace DesignPattern.AbstractFactory.AbstractProduct
 {
-    public class LoadBalancer3
+    public interface IComboBox
     {
+        void Display();
     }
 }

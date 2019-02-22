@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF5B3B7A-4197-4A14-9FB5-B7EFCCD0101A}</ProjectGuid>
+    <ProjectGuid>{589A7CB2-039A-40F5-A2C1-8C5088C6A577}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DesignPatterm.Singleton</RootNamespace>
-    <AssemblyName>DesignPatterm.Singleton</AssemblyName>
+    <RootNamespace>DesignPattern.AbstractFactory</RootNamespace>
+    <AssemblyName>DesignPattern.AbstractFactory</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,13 +44,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomServer.cs" />
-    <Compile Include="LoadBalancer.cs" />
+    <Compile Include="AbstractFactory\ISkinFactory.cs" />
+    <Compile Include="AbstractProduct\IButton.cs" />
+    <Compile Include="AbstractProduct\IComboBox.cs" />
+    <Compile Include="AbstractProduct\ITextField.cs" />
+    <Compile Include="AppConfigHelper.cs" />
+    <Compile Include="ConcreteFactory\SpringSkinFactory.cs" />
+    <Compile Include="ConcreteFactory\SummerSkinFactory.cs" />
+    <Compile Include="ConcreteProduct\SpringButton.cs" />
+    <Compile Include="ConcreteProduct\SpringComboBox.cs" />
+    <Compile Include="ConcreteProduct\SpringTextField.cs" />
+    <Compile Include="ConcreteProduct\SummerButton.cs" />
+    <Compile Include="ConcreteProduct\SummerComboBox.cs" />
+    <Compile Include="ConcreteProduct\SummerTextField.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="逻辑图.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
